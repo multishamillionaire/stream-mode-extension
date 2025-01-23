@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Stream Mode Extension",
+    "description": "Extension to hide sensitive data on the page",
+    "version": "1.0",
+    "action": {
+        "default_popup": "main.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+				"*://*/",
+                "*://*/*"
+            ]
+        }
+    ]
+}
